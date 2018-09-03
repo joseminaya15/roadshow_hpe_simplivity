@@ -60,7 +60,7 @@
             </div>
             <div class="js-information">
                 <h2>Mi&eacute;rcoles 3 de Octubre, 2018</h2>
-                <h3>Hora: x:xx am a xx:xx pm</h3>
+                <h3>Hora: 9:00 am a 5:00 pm</h3>
                 <p>Hotel Park Inn by Radisson Sal&oacute;n Red A </p>
                 <span>Av 6, San Jos&eacute;, Costa Rica</span>
             </div>
