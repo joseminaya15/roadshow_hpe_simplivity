@@ -45,7 +45,7 @@
                 </div>
                 <div class="mdl-card">
                     <div class="js-select m-t-15 m-b-15">
-                        <select name="city" id="city" title="Seleccione una ciudad*" onchange="goToCity()"> 
+                        <select name="cityAdmin" id="cityAdmin" title="Seleccione una ciudad*" onchange="goToCityAdmin()"> 
                             <option value="Bogotá">Bogotá</option>
                             <option value="Buenos Aires">Buenos Aires</option>
                             <option value="Ciudad de México">Ciudad de México</option>
@@ -66,7 +66,7 @@
                                     <th class="text-left">País</th>
                                 </tr>
                             </thead>
-                          <tbody>
+                          <tbody id="tablecity">
                               <?php echo $html ?>  
                           </tbody>
                         </table>

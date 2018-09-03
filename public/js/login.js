@@ -53,3 +53,23 @@ function verificarDatos(e){
     ingresar();
     }
 }
+function goToCityAdmin(){
+  var city = $('#cityAdmin').val();
+  $.ajax({
+    data : {city:city},
+    url  : 'admin/changeTableCity',
+    type : 'POST'
+  }).done(function(data){
+    try{
+        data = JSON.parse(data);
+        if(data.error == 0){
+          $('#tablecity').html('');
+          $('#tablecity').append(data.html);
+        }else {
+          return;
+        }
+      }catch(err){
+        msj('error',err.message);
+      }
+  });
+}

@@ -83,7 +83,7 @@ class Home extends CI_Controller {
 			                                            <td>
 			                                                <table>
 			                                                    <tr>
-			                                                        <td><img src="http://www.marketinghp.net/microsite/DCN/evento_cr/public/img/logo/hpe-vmware.png" width="240" alt="alternative text" border="0" style="display: block;"></td>
+			                                                        <td><img src="http://www.marketinghpe.com/microsite/Simplivity_Workshop/public/img/logo/hpe-intel.png" width="240" alt="alternative text" border="0" style="display: block;"></td>
 			                                                        <td></td>
 			                                                    </tr>
 			                                                </table>

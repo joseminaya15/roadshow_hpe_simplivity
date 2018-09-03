@@ -33,6 +33,35 @@ class Admin extends CI_Controller {
 		$data['html'] = $html;
 		$this->load->view('v_admin', $data);
 	}
+    function changeTableCity(){
+        $data['error'] = EXIT_ERROR;
+        $data['msj']   = null;
+        try {
+            $ciudad = $this->input->post('city');
+            $datos = $this->M_reporte->getDatosByCity($ciudad);
+            $html  = '';
+            if(count($datos) == 0) {
+                $html = '';
+            }else {
+                foreach ($datos as $key){
+                    $html .= '<tr class="tr-cursor-pointer">
+                                <td class="text-left">'.$key->nombre.' '.$key->apellido.'</td>
+                                <td class="text-left">'.$key->email.'</td>
+                                <td class="text-right">'.$key->telefono.'</td>
+                                <td class="text-left">'.$key->empresa.'</td>
+                                <td class="text-left" style="display:none;">'.$key->ciudad.'</td>
+                                <td class="text-left">'.$key->cargo.'</td>
+                                <td class="text-left">'.$key->pais.'</td>
+                            </tr>';
+                }
+            }
+            $data['html'] = $html;
+            $data['error'] = EXIT_SUCCESS;
+        } catch (Exception $e){
+            $data['msj'] = $e->getMessage();
+        }
+        echo json_encode($data);
+    }
     function cerrarCesion(){
         $data['error'] = EXIT_ERROR;
         $data['msj']   = null;

@@ -61,8 +61,8 @@
             <div class="js-information">
                 <h2>Mi&eacute;rcoles 3 de Octubre, 2018</h2>
                 <h3>Hora: 9:00 am a 5:00 pm</h3>
-                <p>Hotel Park Inn by Radisson Sal&oacute;n Red A </p>
-                <span>Av 6, San Jos&eacute;, Costa Rica</span>
+                <p>Oficina HPE</p>
+                <span>HPE Santa Fe</span>
             </div>
             <div class="js-title">
                 <h2>Reg&iacute;strese completando el siguiente formulario</h2>
@@ -118,9 +118,6 @@
                 <h2>Registro realizado correctamente. Lo esperamos</h2>
             </div>
         </div>
-    </section>
-    <section id="mapa">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.020770053299!2d-84.09455668520636!3d9.932227992897616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fac2d63f6fed%3A0xcb764617b4262c9a!2sPark+Inn+by+Radisson+San+Jose%2C+Costa+Rica!5e0!3m2!1ses!2spe!4v1533166555929" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
     </section>
     <footer class="js-section">
         <div class="js-container text-center">
@@ -195,10 +192,10 @@
     <script src="<?php echo RUTA_JS?>Utils.js?v=<?php echo time();?>"></script>
     <script src="<?php echo RUTA_JS?>jsindex.js?v=<?php echo time();?>"></script>
     <script type="text/javascript">
-        // var URLactual = window.location;
-        // if(URLactual['href'] != 'http://www.marketinghp.net/microsite/DCN/evento_cr/'){
-        //     location.href = 'http://www.marketinghp.net/microsite/DCN/evento_cr/';
-        // }
+        var URLactual = window.location;
+        if(URLactual['href'] != 'http://www.marketinghpe.com/microsite/Simplivity_Workshop/'){
+            location.href = 'http://www.marketinghpe.com/microsite/Simplivity_Workshop/';
+        }
     </script>
 </body>
 </html>

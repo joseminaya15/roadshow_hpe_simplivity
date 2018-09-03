@@ -10,4 +10,9 @@ class M_reporte extends  CI_Model{
         $result = $this->db->query($sql);
         return $result->result();
     }
+    function getDatosByCity($ciudad) {
+        $sql = "SELECT * FROM participante where ciudad like ?";
+        $result = $this->db->query($sql,array($ciudad));
+        return $result->result();
+    }
 }
