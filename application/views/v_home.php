@@ -48,11 +48,11 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="js-input js-select">
-                        <select name="participant" id="participant" title="Seleccione su ciudad*"> 
+                        <select name="city" id="city" title="Seleccione una ciudad*" onchange="goToCity()"> 
                             <option value="Bogotá">Bogotá</option>
                             <option value="Buenos Aires">Buenos Aires</option>
                             <option value="Ciudad de México">Ciudad de México</option>
-                            <option value="Santigo">Santigo</option>
+                            <option value="Santiago">Santiago</option>
                             <option value="Sao Paulo">Sao Paulo</option>
                         </select>
                     </div>
@@ -199,11 +199,6 @@
         // if(URLactual['href'] != 'http://www.marketinghp.net/microsite/DCN/evento_cr/'){
         //     location.href = 'http://www.marketinghp.net/microsite/DCN/evento_cr/';
         // }
-        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
-            $('select').selectpicker('mobile');
-        } else {
-            $('select').selectpicker();
-        }
     </script>
 </body>
 </html>

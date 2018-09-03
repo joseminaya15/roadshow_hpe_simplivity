@@ -27,6 +27,7 @@ class Home extends CI_Controller {
 			$telefono	    = $this->input->post('Phone');
 			$empresa 		= $this->input->post('Company');
 			$cargo 		    = $this->input->post('Position');
+			$city           = $this->input->post('City');
 			$pais	 		= $this->input->post('Country');
 			$existe         = $this->M_Datos->existCorreo($correo);
 			$fecha          = date('Y-m-d');
@@ -40,6 +41,7 @@ class Home extends CI_Controller {
 										   'telefono' 	=> $telefono,
 										   'empresa'    => $empresa,
 										   'cargo'      => $cargo,
+										   'ciudad'     => $city,
 										   'pais'       => $pais,
 										   'fecha'      => $fecha);
 				$datoInsert  = $this->M_Datos->insertarDatos($insertParticipante,'participante');
@@ -61,7 +63,7 @@ class Home extends CI_Controller {
 			                     'smtp_host' => 'smtpout.secureserver.net',
 			                     'smtp_port' => 3535,
 			                     'smtp_user' => 'info@marketinghpe.com',
-			                     'smtp_pass' => 'hpEmSac$18',
+			                     'smtp_pass' => 'Ag0#3918Peh',
 			                     'mailtype'  => 'html',
 			                     'charset'   => 'utf-8',
 			                     'newline'   => "\r\n");    
@@ -81,7 +83,7 @@ class Home extends CI_Controller {
 			                                            <td>
 			                                                <table>
 			                                                    <tr>
-			                                                        <td><a href="#"><img src="http://www.marketinghp.net/microsite/DCN/evento_cr/public/img/logo/hpe-vmware.png" width="240" alt="alternative text" border="0" style="display: block;"></a></td>
+			                                                        <td><img src="http://www.marketinghp.net/microsite/DCN/evento_cr/public/img/logo/hpe-vmware.png" width="240" alt="alternative text" border="0" style="display: block;"></td>
 			                                                        <td></td>
 			                                                    </tr>
 			                                                </table>

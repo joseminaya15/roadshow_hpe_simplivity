@@ -44,6 +44,15 @@
                     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button-logout" onclick="cerrarCesion()">Cerrar Sesión</button> 
                 </div>
                 <div class="mdl-card">
+                    <div class="js-select m-t-15 m-b-15">
+                        <select name="city" id="city" title="Seleccione una ciudad*" onchange="goToCity()"> 
+                            <option value="Bogotá">Bogotá</option>
+                            <option value="Buenos Aires">Buenos Aires</option>
+                            <option value="Ciudad de México">Ciudad de México</option>
+                            <option value="Santiago">Santiago</option>
+                            <option value="Sao Paulo">Sao Paulo</option>
+                        </select>
+                    </div>
                     <div class="table-responsive">
                         <table id="example" class="display nowrap table table-bordered table-hover dt-responsive" cellspacing="0" width="100%">
                             <thead>
@@ -52,6 +61,7 @@
                                     <th class="text-left">Email</th>
                                     <th class="text-right">Tel&eacute;fono</th>
                                     <th class="text-left">Canal</th>
+                                    <th class="text-left" style="display: none;">Ciudad</th>
                                     <th class="text-left">Cargo</th>
                                     <th class="text-left">País</th>
                                 </tr>
@@ -81,6 +91,7 @@
         <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.print.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+        <script src="<?php echo RUTA_JS?>Utils.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_JS?>login.js?v=<?php echo time();?>"></script>
         <script type="text/javascript">
             $(document).ready(function() {

@@ -24,6 +24,7 @@ class Admin extends CI_Controller {
                             <td class="text-left">'.$key->email.'</td>
                             <td class="text-right">'.$key->telefono.'</td>
                             <td class="text-left">'.$key->empresa.'</td>
+                            <td class="text-left" style="display:none;">'.$key->ciudad.'</td>
                             <td class="text-left">'.$key->cargo.'</td>
                             <td class="text-left">'.$key->pais.'</td>
                         </tr>';
