@@ -46,7 +46,7 @@
     <section id="register" class="js-section">
         <div class="js-container">
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-6 col-md-4">
                     <div class="js-input js-select">
                         <select name="city" id="city" title="Seleccione una ciudad*" onchange="goToCity()"> 
                             <option value="Bogotá">Bogotá</option>
@@ -62,7 +62,7 @@
                 <h2>Mi&eacute;rcoles 3 de Octubre, 2018</h2>
                 <h3>Hora: 9:00 am a 5:00 pm</h3>
                 <p>Oficina HPE</p>
-                <span>HPE Santa Fe</span>
+                <span>Direcci&oacute;n</span>
             </div>
             <div class="js-title">
                 <h2>Reg&iacute;strese completando el siguiente formulario</h2>
