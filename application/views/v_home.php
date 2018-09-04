@@ -60,7 +60,7 @@
             </div>
             <div class="js-information">
                 <h2>Mi&eacute;rcoles 3 de Octubre, 2018</h2>
-                <h3>Hora: 9:00 am a 5:00 pm</h3>
+                <h3>9:00 am a 5:00 pm</h3>
                 <p>Oficina HPE</p>
                 <span>Direcci&oacute;n</span>
             </div>
@@ -121,8 +121,8 @@
     </section>
     <footer class="js-section">
         <div class="js-container text-center">
-            <p class="content">Intel and the Intel logo are trademarks of the Corporation in the United States and / or other countries.</p>
-            <p>&copy;Copyright 2018 Hewlett Packard Enterprice Development LP</p>
+            <p class="content">Intel y el logotipo de Intel son marcas comerciales de la Corporación Intel o sus filiales en los Estados Unidos o en otros países</p>
+            <p>&copy;2018 Copyright Hewlett Packard Enterprise Development LP</p>
         </div>
     </footer>
     <!--MODAL-->
@@ -192,10 +192,10 @@
     <script src="<?php echo RUTA_JS?>Utils.js?v=<?php echo time();?>"></script>
     <script src="<?php echo RUTA_JS?>jsindex.js?v=<?php echo time();?>"></script>
     <script type="text/javascript">
-        var URLactual = window.location;
-        if(URLactual['href'] != 'http://www.marketinghpe.com/microsite/Simplivity_Workshop/'){
-            location.href = 'http://www.marketinghpe.com/microsite/Simplivity_Workshop/';
-        }
+        // var URLactual = window.location;
+        // if(URLactual['href'] != 'http://www.marketinghpe.com/microsite/Simplivity_Workshop/'){
+        //     location.href = 'http://www.marketinghpe.com/microsite/Simplivity_Workshop/';
+        // }
     </script>
 </body>
 </html>

@@ -107,25 +107,25 @@ function goToCity(){
 	var information = $('.js-information'); 
 	if(city == 'Bogotá'){
 		information.find('h2').text('Miércoles 3 de Octubre, 2018');
-		information.find('h3').text('Hora: 9:00 am a 5:00 pm');
+		information.find('h3').text('9:00 am a 5:00 pm');
 		information.find('p').text('Oficina HPE');
 		console.log("entra");
 	}else if(city == 'Buenos Aires'){
 		information.find('h2').text('Miércoles 3 de Octubre, 2018');
-		information.find('h3').text('Hora: 8:00 am a 6:00 pm');
+		information.find('h3').text('8:00 am a 6:00 pm');
 		information.find('p').text('Oficina HPE');
 		console.log("entra");
 	}else if(city == 'Ciudad de México'){
 		information.find('h2').text('Miércoles 24 de Octubre, 2018');
-		information.find('h3').text('Hora: 9:30 am a 6:30 pm');
+		information.find('h3').text('9:30 am a 6:30 pm');
 		information.find('p').text('Oficina HPE Santa Fe');
 	}else if(city == 'Santiago'){
 		information.find('h2').text('Miércoles 3 de Octubre, 2018');
-		information.find('h3').text('Hora: 8:30 am a 5:30 pm');
+		information.find('h3').text('8:30 am a 5:30 pm');
 		information.find('p').text('Oficina HPE Chile – Piso 12 – Sala Maule');
 	}else{
 		information.find('h2').text('Miércoles 3 de Octubre, 2018');
-		information.find('h3').text('Hora: 9:30 am a 7:00 pm');
+		information.find('h3').text('9:30 am a 7:00 pm');
 		information.find('p').text('Oficina HPE Sala Paulista');
 	}
 }
