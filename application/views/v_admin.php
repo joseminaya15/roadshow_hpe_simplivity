@@ -100,6 +100,7 @@
                     responsive: true,
                     dom: 'Bfrtip',
                     aLengthMenu : [100],
+                    destroy : true,
                     buttons: [
                         {
                             extend:'excel',

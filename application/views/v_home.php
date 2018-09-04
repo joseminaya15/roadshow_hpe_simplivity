@@ -48,7 +48,7 @@
             <div class="row">
                 <div class="col-sm-6 col-md-4">
                     <div class="js-input js-select">
-                        <select name="city" id="city" title="Seleccione una ciudad*" onchange="goToCity()"> 
+                        <select name="city" id="city" title="Seleccione aquí su ciudad*" onchange="goToCity()"> 
                             <option value="Bogotá">Bogotá</option>
                             <option value="Buenos Aires">Buenos Aires</option>
                             <option value="Ciudad de México">Ciudad de México</option>
@@ -58,64 +58,66 @@
                     </div>
                 </div>
             </div>
-            <div class="js-information">
-                <h2>Mi&eacute;rcoles 3 de Octubre, 2018</h2>
-                <h3>9:00 am a 5:00 pm</h3>
-                <p>Oficina HPE</p>
-                <span>Direcci&oacute;n</span>
-            </div>
-            <div class="js-title">
-                <h2>Reg&iacute;strese completando el siguiente formulario</h2>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="js-input">
-                        <label for="text">Nombre*</label>
-                        <input type="text" id="name">
+            <div id="js-contenido--ciudad">
+                <div class="js-information">
+                    <h2>Mi&eacute;rcoles 3 de Octubre, 2018</h2>
+                    <h3>9:00 am a 5:00 pm</h3>
+                    <p>Oficina HPE</p>
+                    <span>Direcci&oacute;n</span>
+                </div>
+                <div class="js-title">
+                    <h2>Reg&iacute;strese completando el siguiente formulario</h2>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="js-input">
+                            <label for="text">Nombre*</label>
+                            <input type="text" id="name">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="js-input">
+                            <label for="text">Apellido*</label>
+                            <input type="text" id="surname">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class=" js-input">
+                            <label for="text">Email*</label>
+                            <input type="text" id="email" >
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class=" js-input">
+                            <label for="text">Teléfono*</label>
+                            <input type="text" id="phone">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                         <div class=" js-input">
+                            <label for="text">Nombre de Canal*</label>
+                            <input type="text" id="company" >
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class=" js-input">
+                            <label for="text">Cargo*</label>
+                            <input type="text" id="position">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class=" js-input">
+                            <label for="text">País*</label>
+                            <input type="text" id="country" disabled>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="js-input">
-                        <label for="text">Apellido*</label>
-                        <input type="text" id="surname">
-                    </div>
+                <div class="js-section--button text-left">
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button js-login" onclick="sendInformation()">Enviar</button>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class=" js-input">
-                        <label for="text">Email*</label>
-                        <input type="text" id="email" >
-                    </div>
+                <div id="confirmation" class="js-confirmation">
+                    <h2>Registro realizado correctamente. Lo esperamos</h2>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class=" js-input">
-                        <label for="text">Teléfono*</label>
-                        <input type="text" id="phone">
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                     <div class=" js-input">
-                        <label for="text">Nombre de Canal*</label>
-                        <input type="text" id="company" >
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class=" js-input">
-                        <label for="text">Cargo*</label>
-                        <input type="text" id="position">
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class=" js-input">
-                        <label for="text">País*</label>
-                        <input type="text" id="country">
-                    </div>
-                </div>
-            </div>
-            <div class="js-section--button text-left">
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button js-login" onclick="sendInformation()">Enviar</button>
-            </div>
-            <div id="confirmation" class="js-confirmation">
-                <h2>Registro realizado correctamente. Lo esperamos</h2>
             </div>
         </div>
     </section>

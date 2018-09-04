@@ -104,28 +104,32 @@ function verificarDatos(e) {
 }
 function goToCity(){
 	var city        = $('#city').val();
-	var information = $('.js-information'); 
+	var information = $('.js-information');
+	$('#js-contenido--ciudad').css('display','block'); 
 	if(city == 'Bogotá'){
 		information.find('h2').text('Miércoles 3 de Octubre, 2018');
 		information.find('h3').text('9:00 am a 5:00 pm');
 		information.find('p').text('Oficina HPE');
-		console.log("entra");
+		$('#country').val('Colombia');
 	}else if(city == 'Buenos Aires'){
 		information.find('h2').text('Miércoles 3 de Octubre, 2018');
 		information.find('h3').text('8:00 am a 6:00 pm');
 		information.find('p').text('Oficina HPE');
-		console.log("entra");
+		$('#country').val('Argentina');
 	}else if(city == 'Ciudad de México'){
 		information.find('h2').text('Miércoles 24 de Octubre, 2018');
 		information.find('h3').text('9:30 am a 6:30 pm');
 		information.find('p').text('Oficina HPE Santa Fe');
+		$('#country').val('México');
 	}else if(city == 'Santiago'){
 		information.find('h2').text('Miércoles 3 de Octubre, 2018');
 		information.find('h3').text('8:30 am a 5:30 pm');
 		information.find('p').text('Oficina HPE Chile – Piso 12 – Sala Maule');
+		$('#country').val('Chile');
 	}else{
 		information.find('h2').text('Miércoles 3 de Octubre, 2018');
 		information.find('h3').text('9:30 am a 7:00 pm');
 		information.find('p').text('Oficina HPE Sala Paulista');
+		$('#country').val('Brasil');
 	}
 }

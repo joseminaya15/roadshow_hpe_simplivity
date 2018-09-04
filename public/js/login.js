@@ -63,8 +63,30 @@ function goToCityAdmin(){
     try{
         data = JSON.parse(data);
         if(data.error == 0){
+          // table.destroy();
+          $('#example').DataTable().destroy();
           $('#tablecity').html('');
           $('#tablecity').append(data.html);
+          $('#example').DataTable( {
+              searching : false,
+              responsive: true,
+              dom: 'Bfrtip',
+              aLengthMenu : [100],
+              destroy : true,
+              buttons: [
+                  {
+                      extend:'excel',
+                      text: 'Exportar a Excel'
+                  },
+                  {
+                      extend:'print',
+                      text: 'Imprimir'
+                  }
+              ],
+              language : {
+                  info : "Mostrando _TOTAL_ registros",
+              }
+          });
         }else {
           return;
         }
