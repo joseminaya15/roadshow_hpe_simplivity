@@ -71,7 +71,7 @@ class Home extends CI_Controller {
 			$this->email->from('info@marketinghpe.com');
 			$this->email->to($correo);
 			// $this->email->to('jose.minayac15@gmail.com');
-			$this->email->subject('HPE - Gracias por registrarse en nuestro evento.');
+			$this->email->subject('Gracias por registrarse al Taller de entrenamiento técnico de HPE SimpliVity');
 			$texto = '<!DOCTYPE html>
 <html>
     <body>
