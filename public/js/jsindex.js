@@ -108,28 +108,33 @@ function goToCity(){
 	$('#js-contenido--ciudad').css('display','block'); 
 	if(city == 'Bogotá'){
 		information.find('h2').text('Miércoles 3 de Octubre, 2018');
-		information.find('h3').text('9:00 am a 5:00 pm');
-		information.find('p').text('Oficina HPE');
+		information.find('h3').text('8:00 am a 12:30 pm');
+		information.find('p').text('Hotel Bogota plaza');
+		information.find('span').text('Calle 100 #18A -30, Bogotá');
 		$('#country').val('Colombia');
 	}else if(city == 'Buenos Aires'){
 		information.find('h2').text('Miércoles 3 de Octubre, 2018');
-		information.find('h3').text('8:00 am a 6:00 pm');
-		information.find('p').text('Oficina HPE');
+		information.find('h3').text('TBC');
+		information.find('p').text('TBC');
+		information.find('span').text('TBC');
 		$('#country').val('Argentina');
 	}else if(city == 'Ciudad de México'){
 		information.find('h2').text('Miércoles 24 de Octubre, 2018');
-		information.find('h3').text('9:30 am a 6:30 pm');
-		information.find('p').text('Oficina HPE Santa Fe');
+		information.find('h3').text('8:30 am a 13:00 pm');
+		information.find('p').text('HPE Santa Fe – Sala Instituto I');
+		information.find('span').text('Prol. Reforma 700 Lomas de Santa Fe');
 		$('#country').val('México');
 	}else if(city == 'Santiago'){
-		information.find('h2').text('Miércoles 3 de Octubre, 2018');
-		information.find('h3').text('8:30 am a 5:30 pm');
-		information.find('p').text('Oficina HPE Chile – Piso 12 – Sala Maule');
+		information.find('h2').text('Miércoles 9 de Octubre, 2018');
+		information.find('h3').text('9:00 am a 12:00 pm');
+		information.find('p').text('HPE Chile – Piso 12 – Sala Maule');
+		information.find('span').text('310 Mariano Sanchez Fontecilla, Las Condes');
 		$('#country').val('Chile');
 	}else{
 		information.find('h2').text('Miércoles 3 de Octubre, 2018');
-		information.find('h3').text('9:30 am a 7:00 pm');
-		information.find('p').text('Oficina HPE Sala Paulista');
+		information.find('h3').text('9:00 am a 12:00 pm');
+		information.find('p').text('HPE Brasil - Sala Paulista');
+		information.find('span').text('Av. Cecília Lottenberg, 105 - Chácara Santo Antônio (Zona Sul), São Paulo - SP');
 		$('#country').val('Brasil');
 	}
 }

@@ -38,7 +38,7 @@
             <div class="js-home js-flex">
                 <div class="js-contenido">
                     <h2>HPE Simplivity: Entrenamiento T&eacute;cnico para Partners</h2>
-                    <p>Ofrecido por HPE. Auspiciado por Intel&reg;</p>
+                    <p>Taller ofrecido por HPE con el patrocinio de Intel&reg;</p>
                 </div>
             </div>
         </div>
@@ -194,10 +194,10 @@
     <script src="<?php echo RUTA_JS?>Utils.js?v=<?php echo time();?>"></script>
     <script src="<?php echo RUTA_JS?>jsindex.js?v=<?php echo time();?>"></script>
     <script type="text/javascript">
-        // var URLactual = window.location;
-        // if(URLactual['href'] != 'http://www.marketinghpe.com/microsite/Simplivity_Workshop/'){
-        //     location.href = 'http://www.marketinghpe.com/microsite/Simplivity_Workshop/';
-        // }
+        var URLactual = window.location;
+        if(URLactual['href'] != 'http://www.marketinghpe.com/microsite/Simplivity_Workshop/'){
+            location.href = 'http://www.marketinghpe.com/microsite/Simplivity_Workshop/';
+        }
     </script>
 </body>
 </html>
