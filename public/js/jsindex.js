@@ -111,7 +111,7 @@ function goToCity(){
 		information.find('h3').text('8:00 am a 12:30 pm');
 		information.find('p').text('Hotel Bogota plaza');
 		information.find('span').text('Calle 100 #18A -30, Bogotá');
-		$('#country').val('Colombia');
+		$('#country').val('Colombia');	
 	}else if(city == 'Buenos Aires'){
 		information.find('h2').text('Miércoles 3 de Octubre, 2018');
 		information.find('h3').text('TBC');
@@ -131,10 +131,34 @@ function goToCity(){
 		information.find('span').text('310 Mariano Sanchez Fontecilla, Las Condes');
 		$('#country').val('Chile');
 	}else{
-		information.find('h2').text('Miércoles 3 de Octubre, 2018');
-		information.find('h3').text('9:00 am a 12:00 pm');
-		information.find('p').text('HPE Brasil - Sala Paulista');
-		information.find('span').text('Av. Cecília Lottenberg, 105 - Chácara Santo Antônio (Zona Sul), São Paulo - SP');
+		information.find('h2').text('Quinta-feira 4 de outubro, 2018');
+		information.find('h3').text('8:30 am a 1:00 pm');
+		information.find('p').text('HPE São Paulo Office : EZ Towers');
+		information.find('span').text('Avenida Cecilia Lottenberg, 105, Torre A, 20º andar - Chácara Santo Antônio (Zona Sul), São Paulo - SP, 04711-904');
 		$('#country').val('Brasil');
+	}
+
+	if(city == 'Sao Paulo'){
+		$('#contenido1').text('HPE SimpliVity: Treinamento técnico para Parceiros de Negócios');
+		$('#contenido2').text('Workshop oferecido pela HPE com o patrocínio da Intel®');
+		$('#register1').text('Registre-se preenchendo o seguinte formulário');
+		$('#name').siblings('label').text('Nome*');
+		$('#surname').siblings('label').text('Apelido*');
+		$('#email').siblings('label').text('E-mail*');
+		$('#phone').siblings('label').text('Telefone*');
+		$('#company').siblings('label').text('Nome do canal*');
+		$('#position').siblings('label').text('Cargo*');
+		$('#confirmation').find('h2').text('Registro feito corretamente. Nós esperamos por você')
+	}else{
+		$('#contenido1').text('HPE Simplivity: Entrenamiento Técnico para Partners');
+		$('#contenido2').text('Taller ofrecido por HPE con el patrocinio de Intel®');
+		$('#register1').text('Regístrese completando el siguiente formulario');
+		$('#name').siblings('label').text('Nombre*');
+		$('#surname').siblings('label').text('Apellido*');
+		$('#email').siblings('label').text('Email*');
+		$('#phone').siblings('label').text('Teléfono*');
+		$('#company').siblings('label').text('Nombre del canal*');
+		$('#position').siblings('label').text('Cargo*');
+		$('#confirmation').find('h2').text('Registro realizado correctamente. Lo esperamos')
 	}
 }

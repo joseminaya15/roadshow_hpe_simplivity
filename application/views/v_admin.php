@@ -64,6 +64,7 @@
                                     <th class="text-left" style="display: none;">Ciudad</th>
                                     <th class="text-left">Cargo</th>
                                     <th class="text-left">País</th>
+                                    <th class="text-left">Fecha de registro</th>
                                 </tr>
                             </thead>
                           <tbody id="tablecity">

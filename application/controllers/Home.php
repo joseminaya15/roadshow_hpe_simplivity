@@ -45,7 +45,7 @@ class Home extends CI_Controller {
 										   'pais'       => $pais,
 										   'fecha'      => $fecha);
 				$datoInsert  = $this->M_Datos->insertarDatos($insertParticipante,'participante');
-				$this->sendConfirmation($correo);
+				// $this->sendConfirmation($correo);
 	          	$data['msj']   = $datoInsert['msj'];
 	          	$data['error'] = $datoInsert['error'];
 	          }

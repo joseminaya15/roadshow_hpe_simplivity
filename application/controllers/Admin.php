@@ -27,6 +27,7 @@ class Admin extends CI_Controller {
                             <td class="text-left" style="display:none;">'.$key->ciudad.'</td>
                             <td class="text-left">'.$key->cargo.'</td>
                             <td class="text-left">'.$key->pais.'</td>
+                            <td class="text-left">'.$key->fecha.'</td>
                         </tr>';
             }
         }
@@ -52,6 +53,7 @@ class Admin extends CI_Controller {
                                 <td class="text-left" style="display:none;">'.$key->ciudad.'</td>
                                 <td class="text-left">'.$key->cargo.'</td>
                                 <td class="text-left">'.$key->pais.'</td>
+                                <td class="text-left">'.$key->fecha.'</td>
                             </tr>';
                 }
             }
