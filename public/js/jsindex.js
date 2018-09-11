@@ -132,7 +132,7 @@ function goToCity(){
 		$('#country').val('Chile');
 	}else{
 		information.find('h2').text('Quinta-feira 4 de outubro, 2018');
-		information.find('h3').text('8:30 am a 1:00 pm');
+		information.find('h3').text('9:00 am a 12:00 pm');
 		information.find('p').text('HPE São Paulo Office : EZ Towers');
 		information.find('span').text('Avenida Cecilia Lottenberg, 105, Torre A, 20º andar - Chácara Santo Antônio (Zona Sul), São Paulo - SP, 04711-904');
 		$('#country').val('Brasil');
@@ -143,7 +143,7 @@ function goToCity(){
 		$('#contenido2').text('Workshop oferecido pela HPE com o patrocínio da Intel®');
 		$('#register1').text('Registre-se preenchendo o seguinte formulário');
 		$('#name').siblings('label').text('Nome*');
-		$('#surname').siblings('label').text('Apelido*');
+		$('#surname').siblings('label').text('Sobrenome*');
 		$('#email').siblings('label').text('E-mail*');
 		$('#phone').siblings('label').text('Telefone*');
 		$('#company').siblings('label').text('Nome do canal*');
