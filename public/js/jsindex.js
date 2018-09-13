@@ -19,14 +19,20 @@ $('a.link[href^="#"]').click(function(e) {
  	}, 'slow');
 });
 function sendInformation(){
-	var city        = $('#city').val();
-	var name 		= $('#name').val();
-	var surname 	= $('#surname').val();
-	var email 		= $('#email').val();
-	var phone 		= $('#phone').val();
-	var company 	= $('#company').val();
-	var position 	= $('#position').val();
-	var country 	= $('#country').val();
+	var city          = $('#city').val();
+	var name 		  = $('#name').val();
+	var surname 	  = $('#surname').val();
+	var email 		  = $('#email').val();
+	var phone 		  = $('#phone').val();
+	var company 	  = $('#company').val();
+	var position 	  = $('#position').val();
+	var country 	  = $('#country').val();
+	var electronico   = $('#electronico').is(':checked');
+	var noelectronico = $('#noelectronico').is(':checked');
+	var telefono      = $('#telefono').is(':checked');
+	var notelefono    = $('#notelefono').is(':checked');
+	var comucorreo    = null;
+	var comutelefono  = null;
 	if(city == null || city == '') {
 		msj('error', 'Deebe escoger una ciudad');
 		return;
@@ -63,15 +69,27 @@ function sendInformation(){
 		msj('error', 'País debe completarse');
 		return;
 	}
+	if(electronico == true){
+		comucorreo = 1;
+	}else{
+		comucorreo = 2;
+	}
+	if(telefono == true){
+		comutelefono = 1;
+	}else{
+		comutelefono = 2;
+	}
 	$.ajax({
-		data : {City        : city,
-				Name	    : name,
-				Surname	    : surname,
-				Email 	    : email,
-				Phone	    : phone,
-				Company	    : company,
-				Position    : position,
-				Country	    : country},
+		data : {City         : city,
+				Name	     : name,
+				Surname	     : surname,
+				Email 	     : email,
+				Phone	     : phone,
+				Company	     : company,
+				Position     : position,
+				Country	     : country,
+				Comucorreo   : comucorreo,
+			    Comutelefono : comutelefono},
 		url  : 'home/register',
 		type : 'POST'
 	}).done(function(data){
@@ -112,17 +130,26 @@ function goToCity(){
 		information.find('p').text('Hotel Bogota plaza');
 		information.find('span').text('Calle 100 #18A -30, Bogotá');
 		$('#country').val('Colombia');	
+		$('#declaration').attr({
+			href: 'https://www.hpe.com/lamerica/es/legal/privacy.html'
+		});
 	}else if(city == 'Buenos Aires'){
 		information.find('h2').text('Miércoles 3 de Octubre, 2018');
 		information.find('h3').text('TBC');
 		information.find('p').text('TBC');
 		information.find('span').text('TBC');
 		$('#country').val('Argentina');
+		$('#declaration').attr({
+			href: 'https://www.hpe.com/lamerica/es/legal/privacy.html'
+		});
 	}else if(city == 'Ciudad de México'){
 		information.find('h2').text('Miércoles 24 de Octubre, 2018');
 		information.find('h3').text('8:30 am a 13:00 pm');
 		information.find('p').text('HPE Santa Fe – Sala Instituto I');
 		information.find('span').text('Prol. Reforma 700 Lomas de Santa Fe');
+		$('#declaration').attr({
+			href: 'https://www.hpe.com/mx/es/legal/privacy.html'
+		});
 		$('#country').val('México');
 	}else if(city == 'Santiago'){
 		information.find('h2').text('Miércoles 9 de Octubre, 2018');
@@ -130,6 +157,9 @@ function goToCity(){
 		information.find('p').text('HPE Chile – Piso 12 – Sala Maule');
 		information.find('span').text('310 Mariano Sanchez Fontecilla, Las Condes');
 		$('#country').val('Chile');
+		$('#declaration').attr({
+			href: 'https://www.hpe.com/lamerica/es/legal/privacy.html'
+		});
 	}else{
 		information.find('h2').text('Quinta-feira 4 de outubro, 2018');
 		information.find('h3').text('9:00 am a 12:00 pm');
@@ -148,7 +178,9 @@ function goToCity(){
 		$('#phone').siblings('label').text('Telefone*');
 		$('#company').siblings('label').text('Nome do canal*');
 		$('#position').siblings('label').text('Cargo*');
-		$('#confirmation').find('h2').text('Registro feito corretamente. Nós esperamos por você')
+		$('#confirmation').find('h2').text('Registro feito corretamente. Nós esperamos por você');
+		$('#terminoSpanish').css('display','none');
+		$('#terminoPortugues').css('display','block');
 	}else{
 		$('#contenido1').text('HPE Simplivity: Entrenamiento Técnico para Partners');
 		$('#contenido2').text('Taller ofrecido por HPE con el patrocinio de Intel®');
@@ -159,6 +191,8 @@ function goToCity(){
 		$('#phone').siblings('label').text('Teléfono*');
 		$('#company').siblings('label').text('Nombre del canal*');
 		$('#position').siblings('label').text('Cargo*');
-		$('#confirmation').find('h2').text('Registro realizado correctamente. Lo esperamos')
+		$('#confirmation').find('h2').text('Registro realizado correctamente. Lo esperamos');
+		$('#terminoSpanish').css('display','block');
+		$('#terminoPortugues').css('display','none');
 	}
 }

@@ -15,10 +15,14 @@ class Admin extends CI_Controller {
 	public function index(){
         $datos = $this->M_reporte->getDatosUser();
         $html  = '';
+        $flg_correo = '';
+        $flg_telefono = '';
         if(count($datos) == 0) {
             $html = '';
         }else {
             foreach ($datos as $key){
+                $flg_correo   = $key->flg_correo == 1 ? 'Si' : 'No';
+                $flg_telefono = $key->flg_telefono == 1 ? 'Si' : 'No';
                 $html .= '<tr class="tr-cursor-pointer">
                             <td class="text-left">'.$key->nombre.' '.$key->apellido.'</td>
                             <td class="text-left">'.$key->email.'</td>
@@ -28,6 +32,8 @@ class Admin extends CI_Controller {
                             <td class="text-left">'.$key->cargo.'</td>
                             <td class="text-left">'.$key->pais.'</td>
                             <td class="text-left">'.$key->fecha.'</td>
+                            <td class="text-left">'.$flg_correo.'</td>
+                            <td class="text-left">'.$flg_telefono.'</td>
                         </tr>';
             }
         }
@@ -41,10 +47,14 @@ class Admin extends CI_Controller {
             $ciudad = $this->input->post('city');
             $datos = $this->M_reporte->getDatosByCity($ciudad);
             $html  = '';
+            $flg_correo = '';
+            $flg_telefono = '';
             if(count($datos) == 0) {
                 $html = '';
             }else {
                 foreach ($datos as $key){
+                    $flg_correo   = $key->flg_correo == 1 ? 'Si' : 'No';
+                    $flg_telefono = $key->flg_telefono == 1 ? 'Si' : 'No';
                     $html .= '<tr class="tr-cursor-pointer">
                                 <td class="text-left">'.$key->nombre.' '.$key->apellido.'</td>
                                 <td class="text-left">'.$key->email.'</td>
@@ -54,6 +64,8 @@ class Admin extends CI_Controller {
                                 <td class="text-left">'.$key->cargo.'</td>
                                 <td class="text-left">'.$key->pais.'</td>
                                 <td class="text-left">'.$key->fecha.'</td>
+                                <td class="text-left">'.$flg_correo.'</td>
+                                <td class="text-left">'.$flg_telefono.'</td>
                             </tr>';
                 }
             }

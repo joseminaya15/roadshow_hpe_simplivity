@@ -65,6 +65,8 @@
                                     <th class="text-left">Cargo</th>
                                     <th class="text-left">País</th>
                                     <th class="text-left">Fecha de registro</th>
+                                    <th class="text-left">Información por correo</th>
+                                    <th class="text-left">Información por teléfono</th>
                                 </tr>
                             </thead>
                           <tbody id="tablecity">

@@ -112,6 +112,58 @@
                         </div>
                     </div>
                 </div>
+                <div id="terminoSpanish" class="js-terminos">
+                    <p>Le gustar&iacute;a recibir comunicaciones personalizadas sobre HPE y sobre productos, servicios, ofertas y eventos seleccionados de partners de HPE?</p>
+                    <div class="js-radio">
+                        <label class="js-label__name">Correo electr&oacute;nico*</label>
+                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="electronico">
+                            <input type="radio" id="electronico" class="mdl-radio__button" name="options" value="1">
+                            <span class="mdl-radio__label">Si</span>
+                        </label>
+                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="noelectronico">
+                            <input type="radio" id="noelectronico" class="mdl-radio__button" name="options" value="2">
+                            <span class="mdl-radio__label">No</span>
+                        </label>
+                    </div>
+                    <div class="js-radio">
+                        <label class="js-label__name">Tel&eacute;fono*</label>
+                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="telefono">
+                            <input type="radio" id="telefono" class="mdl-radio__button" name="options1" value="1">
+                            <span class="mdl-radio__label">Si</span>
+                        </label>
+                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="notelefono">
+                            <input type="radio" id="notelefono" class="mdl-radio__button" name="options1" value="2">
+                            <span class="mdl-radio__label">No</span>
+                        </label>
+                    </div>
+                    <p>Para m&aacute;s informaci&oacute;n sobre c&oacute;mo HPE gestiona, usa y protege su informaci&oacute;n, consulte la <a href="https://www.hpe.com/lamerica/es/legal/privacy.html" target="_blank" id="declaration">Declaraci&oacute;n de privacidad de HPE.</a> Siempre puede anular o modificar su consentimiento para recibir comunicaciones de marketing de HPE. Podr&aacute; hacerlo mediante las opciones de exclusi&oacute;n voluntaria y preferencias que se encuentran en la parte inferior de nuestras comunicaciones de marketing por correo electr&oacute;nico o bien, siguiendo el <a href="https://h41360.www4.hpe.com/unsubscribe-gp.php" target="_blank">enlace a continuaci&oacute;n.</a>Si proporcion&oacute; su n&uacute;mero de tel&eacute;fono m&oacute;vil para recibir comunicaciones de marketing, tenga en cuenta que podr&iacute;n aplicarse cargos por roaming.</p>
+                </div>
+                <div id="terminoPortugues" class="js-terminos">
+                    <p>Gostaria de receber comunicações personalizadas sobre a HPE e sobre produtos, serviços, ofertas e eventos selecionados dos parceiros da HPE?</p>
+                    <div class="js-radio">
+                        <label class="js-label__name">e-mail*</label>
+                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="electronico1">
+                            <input type="radio" id="electronico1" class="mdl-radio__button" name="options2" value="1">
+                            <span class="mdl-radio__label">Si</span>
+                        </label>
+                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="noelectronico1">
+                            <input type="radio" id="noelectronico1" class="mdl-radio__button" name="options2" value="2">
+                            <span class="mdl-radio__label">No</span>
+                        </label>
+                    </div>
+                    <div class="js-radio">
+                        <label class="js-label__name">Telefone*</label>
+                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="telefono1">
+                            <input type="radio" id="telefono1" class="mdl-radio__button" name="options3" value="1">
+                            <span class="mdl-radio__label">Si</span>
+                        </label>
+                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="notelefono1">
+                            <input type="radio" id="notelefono1" class="mdl-radio__button" name="options3" value="2">
+                            <span class="mdl-radio__label">No</span>
+                        </label>
+                    </div>
+                    <p>Para obter mais informações sobre como a HPE gerencia, usa e protege suas informações, consulte a <a href="https://www.hpe.com/br/pt/legal/privacy.html" target="_blank">Declaração de privacidade da HPE</a>. Você pode sempre revogar ou modificar seu consentimento para receber comunicações de marketing da HPE. Você pode fazê-lo através das opções de exclusão e preferências encontradas na parte inferior de nossas comunicações de marketing por e-mail ou seguindo o <a href="https://h41360.www4.hpe.com/unsubscribe-gp.php" target="_blank">link abaixo</a>. Se você forneceu seu número de telefone celular para receber comunicações de marketing, observe que as tarifas de roaming podem ser aplicadas.</p>
+                </div>
                 <div class="js-section--button text-left">
                     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button js-login" onclick="sendInformation()">Enviar</button>
                 </div>
@@ -194,10 +246,10 @@
     <script src="<?php echo RUTA_JS?>Utils.js?v=<?php echo time();?>"></script>
     <script src="<?php echo RUTA_JS?>jsindex.js?v=<?php echo time();?>"></script>
     <script type="text/javascript">
-        // var URLactual = window.location;
-        // if(URLactual['href'] != 'http://www.marketinghpe.com/microsite/Simplivity_Workshop/'){
-        //     location.href = 'http://www.marketinghpe.com/microsite/Simplivity_Workshop/';
-        // }
+        var URLactual = window.location;
+        if(URLactual['href'] != 'http://www.marketinghpe.com/microsite/Simplivity_Workshop/'){
+            location.href = 'http://www.marketinghpe.com/microsite/Simplivity_Workshop/';
+        }
     </script>
 </body>
 </html>

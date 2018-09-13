@@ -29,21 +29,25 @@ class Home extends CI_Controller {
 			$cargo 		    = $this->input->post('Position');
 			$city           = $this->input->post('City');
 			$pais	 		= $this->input->post('Country');
+			$flg_correo     = $this->input->post('Comucorreo');
+			$flg_telefono   = $this->input->post('Comutelefono');
 			$existe         = $this->M_Datos->existCorreo($correo);
 			$fecha          = date('Y-m-d');
 			if(count($existe) != 0) {
 				$data['msj']   = 'Correo ya registrado';
 			}
 			else{
-				$insertParticipante = array('nombre'    => $name,
-										   'apellido'   => $surname,
-										   'email' 	    => $correo,
-										   'telefono' 	=> $telefono,
-										   'empresa'    => $empresa,
-										   'cargo'      => $cargo,
-										   'ciudad'     => $city,
-										   'pais'       => $pais,
-										   'fecha'      => $fecha);
+				$insertParticipante = array('nombre'      => $name,
+										   'apellido'     => $surname,
+										   'email' 	      => $correo,
+										   'telefono' 	  => $telefono,
+										   'empresa'      => $empresa,
+										   'cargo'        => $cargo,
+										   'ciudad'       => $city,
+										   'pais'         => $pais,
+										   'fecha'        => $fecha,
+										   'flg_correo'   => $flg_correo,
+										   'flg_telefono' => $flg_telefono);
 				$datoInsert  = $this->M_Datos->insertarDatos($insertParticipante,'participante');
 				// $this->sendConfirmation($correo);
 	          	$data['msj']   = $datoInsert['msj'];
@@ -63,7 +67,7 @@ class Home extends CI_Controller {
 			                     'smtp_host' => 'smtpout.secureserver.net',
 			                     'smtp_port' => 3535,
 			                     'smtp_user' => 'info@marketinghpe.com',
-			                     'smtp_pass' => 'Ag0#3918Peh',
+			                     'smtp_pass' => 'h#120918Pe',
 			                     'mailtype'  => 'html',
 			                     'charset'   => 'utf-8',
 			                     'newline'   => "\r\n");    
@@ -78,34 +82,13 @@ class Home extends CI_Controller {
         <table width="500px" cellpadding="0" cellspacing="0" align="center" style="border: solid 1px #ccc;">
             <tr>
                 <td>
-                    <table width="500" cellspacing="0" cellpadding="0" border="0" align="center" style="background-color: #415564;padding: 15px 20px;">
-                        <tr>
-                            <td>
-                                <table>
-                                    <tr>
-                                        <td><img src="http://www.marketinghpe.com/microsite/Simplivity_Workshop/public/img/logo/hpe-intel.png" width="240" alt="alternative text" border="0" style="display: block;"></td>
-                                        <td></td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td>
                     <table width="400" cellspacing="0" cellpadding="0" border="0" align="center" style="padding: 30px 0">
                         <tr>
                             <td style="text-align: center;padding: 0;margin: 0;padding-top: 20px; padding-bottom: 10px"><font style="font-family: arial;color: #000000;font-size: 18px;font-weight: 600">Muchas gracias por confirmar <br>
                           su participaci&oacute;n. Su registro <br>
                           se realiz&oacute; con éxito.</font></td>
-                        </tr>
-								                                        <tr>
-                            <td style="text-align: center;padding: 0;margin: 0;padding-bottom: 20px"><font style="font-family: arial;color: #000000;font-size: 16px;font-weight: 200">Lo esperamos en el entrenamiento.</font></td>
-                        </tr>
-                        <tr>
-                            <td align="left"><font style="font-family: arial;color: #757575;font-size: 12px;">Intel y el logotipo de Intel son marcas comerciales de la Corporaci&oacute;n Intel o sus filiales en los Estados Unidos o en otros pa&iacute;ses<br>
-                            &copy;Copyright 2018 Hewlett Packard Enterprise Development LP</font></td>
+                        </tr>                                       <tr>
+                            <td style="text-align: center;padding: 0;margin: 0;padding-bottom: 20px"><font style="font-family: arial;color: #000000;font-size: 16px;font-weight: 200">Lo esperamos</font></td>
                         </tr>
                     </table>
                 </td>
